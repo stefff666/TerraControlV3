@@ -1,3 +1,4 @@
+
 #pragma once
 
 /***********************************************************************
@@ -26,21 +27,21 @@
  * Change these to your network
  ***********************************************************************/
 
-const char* WIFI_SSID     = "YOUR_WIFI";
-const char* WIFI_PASSWORD = "YOUR_PASSWORD";
+constexpr char WIFI_SSID[]     = "YOUR_WIFI";
+constexpr char WIFI_PASSWORD[] = "YOUR_PASSWORD";
+
 
 /***********************************************************************
  * Time Zone
  * Adelaide (Automatic Daylight Saving)
  ***********************************************************************/
 
-const char* TZ_INFO = "ACST-9:30ACDT,M10.1.0/2,M4.1.0/3";
-
+constexpr char TZ_INFO[]       = "ACST-9:30ACDT,M10.1.0/2,M4.1.0/3";
 /***********************************************************************
  * DHT11
  ***********************************************************************/
 
-#define DHT_PIN     13
+constexpr uint8_t DHT_PIN = 13;
 #define DHT_TYPE    DHT11
 
 /***********************************************************************
